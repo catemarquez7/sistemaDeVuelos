@@ -9,7 +9,7 @@ public class Pasajero extends Persona{
 	
 	//constructores
 	public Pasajero() {
-		super(null, null, 0, 0);
+		super("", "", 0, 0);
 	}
 	
 	public Pasajero(String nombre, String apellido, int dni, int edad,

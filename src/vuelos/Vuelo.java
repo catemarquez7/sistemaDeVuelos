@@ -12,20 +12,26 @@ public class Vuelo {
 	protected LocalDateTime partida;
 	protected LocalDateTime llegada;
 	protected LinkedList<Pasajero> pasajeros;
+	protected int asientosDisponibles;
 	
 	//constructor
 	public Vuelo(Avion avion, String origen, String destino, LocalDateTime partida, LocalDateTime llegada) {
+		super();
 		this.avion = avion;
 		this.origen = origen;
 		this.destino = destino;
 		this.partida = partida;
 		this.llegada = llegada;
+		this.pasajeros = new LinkedList<Pasajero>();
+		this.asientosDisponibles = avion.getCapacidad();
+
 	}
 
 	//getters y setters
 	public Avion getAvion() {
 		return avion;
 	}
+
 
 	public void setAvion(Avion avion) {
 		this.avion = avion;
@@ -71,30 +77,20 @@ public class Vuelo {
 		this.pasajeros = pasajeros;
 	}
 
+	public int getAsientosDisponibles() {
+		return asientosDisponibles;
+	}
+
+	public void setAsientosDisponibles(int asientosDisponibles) {
+		this.asientosDisponibles = asientosDisponibles;
+	}
+
 	@Override
 	public String toString() {
-		return "Vuelo [avion=" + avion + ", origen=" + origen + ", destino=" + destino + ", partida=" + partida
-				+ ", llegada=" + llegada + ", pasajeros=" + pasajeros + "]";
+		return "Vuelo: origen=" + origen + ", destino=" + destino + ",\n partida=" + partida
+				+ ", llegada=" + llegada;
 	}
-	
-	//metodos
-	public static void cargarVuelos() {
-		Avion a1 = new Avion("Airbus A320", "1234", 10);
-		Avion a2 = new Avion("Boeing 767", "6758", 20);
-		Avion a3 = new Avion("Embraer 190", "9087", 15);
-		Vuelo v1 = new Vuelo(a1, "Buenos Aires", "Londres", null, null);
-		Vuelo v2 = new Vuelo(a2, "Buenos Aires", "Roma", null, null);
-		Vuelo v3 = new Vuelo(a3, "Buenos Aireso", "Miami", null, null);
-		v1.setPartida(LocalDateTime.of(2025, 6, 15, 20, 35));
-		v1.setLlegada(LocalDateTime.of(2025, 6, 16, 9, 50));
-		v2.setPartida(LocalDateTime.of(2025, 9, 4, 8, 20));
-		v2.setLlegada(LocalDateTime.of(2025, 9, 4, 19, 30));
-		v3.setPartida(LocalDateTime.of(2025, 11, 10, 22, 40));
-		v3.setLlegada(LocalDateTime.of(2025, 11, 11, 11, 11));
-	}
-	
-	
-	
+
 	
 
 }
