@@ -1,1 +1,1 @@
-Sistema de vuelos: ejercicio 1 del modelo del segundo parcial de Programacion Orientada a Objetos
+SISTEMA DE RESERVA DE VUELOS: primer ejercicio del modelo correspondiente al segundo parcial de Programacion Orientada a Objetos.
