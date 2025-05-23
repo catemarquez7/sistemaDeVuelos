@@ -3,8 +3,16 @@ package vuelosTest;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		//menus
+		String[] menu1 = {};
+		
+		
+		//variables
+		int opcionMenu1;
+		
+		//inicio
+		
 	}
 
 }
