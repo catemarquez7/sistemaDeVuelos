@@ -1,24 +1,20 @@
 package vuelos;
 
-import java.time.LocalDate;
-
 public class Persona {
 
 	//atributos
 	protected String nombre;
 	protected String apellido;
-	protected String dni;
-	protected String edad;
-	protected LocalDate fechaDeNacimiento;
+	protected int dni;
+	protected int edad;
 	
 	//constructor
-	public Persona(String nombre, String apellido, String dni, String edad, LocalDate fechaDeNacimiento) {
+	public Persona(String nombre, String apellido, int dni, int edad) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.dni = dni;
 		this.edad = edad;
-		this.fechaDeNacimiento = fechaDeNacimiento;
 	}
 
 	//getters y setters
@@ -38,34 +34,27 @@ public class Persona {
 		this.apellido = apellido;
 	}
 
-	public String getDni() {
+	public int getDni() {
 		return dni;
 	}
 
-	public void setDni(String dni) {
+	public void setDni(int dni) {
 		this.dni = dni;
 	}
 
-	public String getEdad() {
+	public int getEdad() {
 		return edad;
 	}
 
-	public void setEdad(String edad) {
+	public void setEdad(int edad) {
 		this.edad = edad;
 	}
 
-	public LocalDate getFechaDeNacimiento() {
-		return fechaDeNacimiento;
-	}
-
-	public void setFechaDeNacimiento(LocalDate fechaDeNacimiento) {
-		this.fechaDeNacimiento = fechaDeNacimiento;
-	}
 
 	@Override
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", edad=" + edad
-				+ ", fechaDeNacimiento=" + fechaDeNacimiento + "]";
+				+"]";
 	}
 	
 	

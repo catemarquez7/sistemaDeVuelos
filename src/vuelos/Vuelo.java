@@ -83,8 +83,8 @@ public class Vuelo {
 		Avion a2 = new Avion("Boeing 767", "6758", 20);
 		Avion a3 = new Avion("Embraer 190", "9087", 15);
 		Vuelo v1 = new Vuelo(a1, "Buenos Aires", "Londres", null, null);
-		Vuelo v2 = new Vuelo(a2, "Roma", "Madrid", null, null);
-		Vuelo v3 = new Vuelo(a3, "Rio de Janeiro", "Miami", null, null);
+		Vuelo v2 = new Vuelo(a2, "Buenos Aires", "Roma", null, null);
+		Vuelo v3 = new Vuelo(a3, "Buenos Aireso", "Miami", null, null);
 		v1.setPartida(LocalDateTime.of(2025, 6, 15, 20, 35));
 		v1.setLlegada(LocalDateTime.of(2025, 6, 16, 9, 50));
 		v2.setPartida(LocalDateTime.of(2025, 9, 4, 8, 20));

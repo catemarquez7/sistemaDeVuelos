@@ -1,7 +1,5 @@
 package vuelos;
 
-import java.time.LocalDate;
-
 public class Pasajero extends Persona{
 
 	//atributos
@@ -10,10 +8,13 @@ public class Pasajero extends Persona{
 	protected String asiento;
 	
 	//constructores
-	public Pasajero(String nombre, String apellido, String dni, String edad, LocalDate fechaDeNacimiento, Vuelo vuelo,
+	public Pasajero() {
+		super(null, null, 0, 0);
+	}
+	
+	public Pasajero(String nombre, String apellido, int dni, int edad,
 			int nroCliente) {
-		super(nombre, apellido, dni, edad, fechaDeNacimiento);
-		this.vuelo = vuelo;
+		super(nombre, apellido, dni, edad);
 		this.nroCliente = nroCliente;
 	}
 
@@ -45,10 +46,13 @@ public class Pasajero extends Persona{
 	@Override
 	public String toString() {
 		return "Pasajero [vuelo=" + vuelo + ", nroCliente=" + nroCliente + ", asiento=" + asiento + ", nombre=" + nombre
-				+ ", apellido=" + apellido + ", dni=" + dni + ", edad=" + edad + ", fechaDeNacimiento="
-				+ fechaDeNacimiento + "]";
+				+ ", apellido=" + apellido + ", dni=" + dni + ", edad=" + edad + "]";
 	}
 	
+	//metodos
+	public void reservarVuelo() {
+		
+	}
 	
 	
 }
