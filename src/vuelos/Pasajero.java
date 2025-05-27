@@ -96,15 +96,10 @@ public class Pasajero extends Persona{
 	public static void mostrarReserva() {
 		//variables
 		int check;
-		String input;
 		boolean flag=false;
 		
 		//inicio
-		do {
-		input = JOptionPane.showInputDialog("Ingrese su DNI:");
-		} while (input.isEmpty());
-		check = Integer.parseInt(input);
-	
+		check = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su DNI:"));
 			for (int i = 0; i < Vuelo.vuelos.size(); i++) {
 				for (int j = 0; j < Vuelo.vuelos.get(i).pasajeros.size(); j++) {
 					if (Vuelo.vuelos.get(i).getPasajeros().get(j).getDni() == check) {
