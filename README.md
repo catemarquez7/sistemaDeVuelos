@@ -5,4 +5,4 @@
 
 
 <h5>Diagrama de clases.</h5>
-<img src="diagrama.png" width=200 height=200>
+<img src="diagrama.png" width=1000 height=1000>
