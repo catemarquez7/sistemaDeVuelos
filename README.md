@@ -5,4 +5,5 @@
 
 
 <h5>Diagrama de clases.</h5>
-![Objetos - Sistema de vuelos](https://github.com/user-attachments/assets/a8ee3e6a-ebfe-4a5e-966e-fa156d45f562)
+![diagrama](https://github.com/user-attachments/assets/f189701e-f38e-4d53-98ad-373a8b59ad34)
+
