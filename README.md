@@ -5,5 +5,4 @@
 
 
 <h5>Diagrama de clases.</h5>
-![diagrama](https://github.com/user-attachments/assets/f189701e-f38e-4d53-98ad-373a8b59ad34)
-
+<img src="diagrama.png">
