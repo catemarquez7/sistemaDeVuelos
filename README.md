@@ -1,8 +1,10 @@
+# 📝 Reserva de vuelos | 2do cuatrimestre
 
-<h3>Sistema de reserva de vuelos:</h3>
-<p>Ejercicio de practica para el segundo parcial de Programacion Orientada a Objetos.
-</p>
+Ejercicio de la materia Programación Orientada a Objetos, donde en este programa simulamos el sistema de reservas de una aerolínea, desde el rol cliente. Donde puede ver la oferta de vuelos, reservar uno, ver y modificar la reserva.
 
+---
 
-<h5>Diagrama de clases.</h5>
-<img src="diagrama.png" width=900 height=1100>
+## 🫧 Características
+- Java orientado a objetos
+- Registro de usuarios
+- Diagrama de clases
